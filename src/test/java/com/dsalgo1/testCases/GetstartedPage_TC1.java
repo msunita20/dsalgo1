@@ -26,7 +26,7 @@ public class GetstartedPage_TC1 extends Baseclass {
       gs.ClickGetStartedButton();
       
       
-    if(driver.getTitle().equalsIgnoreCase("NumpyNinja")) {
+    if(driver.getTitle().equalsIgnoreCase("NumpyNinja123")) {
     	
     	Assert.assertTrue(true);
     }
