@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-dsalgo1" class="navigator-link">
-              <span class="suite-name border-passed">dsalgo1</span>
+              <span class="suite-name border-failed">dsalgo1</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">9 methods,   9 passed</span>
+                    <span class="method-stats">9 methods, 1 failed,   8 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-dsalgo1" class="hide-methods failed suite-dsalgo1"> (hide)</a> <!-- hide-methods failed suite-dsalgo1 -->
+                      <a href="#" panel-name="suite-dsalgo1" class="show-methods failed suite-dsalgo1"> (show)</a> <!-- show-methods failed suite-dsalgo1 -->
+                    </span>
+                    <div class="method-list-content failed suite-dsalgo1">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-dsalgo1" title="com.dsalgo1.testCases.GetstartedPage_TC1" class="method navigator-link" hash-for-method="GetstartedTest">GetstartedTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-dsalgo1 -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,11 +116,6 @@
                       <a href="#" panel-name="suite-dsalgo1" class="show-methods passed suite-dsalgo1"> (show)</a> <!-- show-methods passed suite-dsalgo1 -->
                     </span>
                     <div class="method-list-content passed suite-dsalgo1">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-dsalgo1" title="com.dsalgo1.testCases.GetstartedPage_TC1" class="method navigator-link" hash-for-method="GetstartedTest">GetstartedTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-dsalgo1" title="com.dsalgo1.testCases.Homepage_TC1" class="method navigator-link" hash-for-method="HomePageTest">HomePageTest</a> <!-- method navigator-link -->
@@ -119,7 +128,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-dsalgo1" title="com.dsalgo1.testCases.Loginpage_TC1" class="method navigator-link" hash-for-method="LoginpageTest(Sunita222, Mishra222)">LoginpageTest(Sunita222, Mishra222)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-dsalgo1" title="com.dsalgo1.testCases.Loginpage_TC1" class="method navigator-link" hash-for-method="LoginpageTest(Sunita123, Ayushi)">LoginpageTest(Sunita123, Ayushi)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -129,7 +138,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-dsalgo1" title="com.dsalgo1.testCases.Loginpage_TC1" class="method navigator-link" hash-for-method="LoginpageTest(Sunita123, Ayushi)">LoginpageTest(Sunita123, Ayushi)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-dsalgo1" title="com.dsalgo1.testCases.Loginpage_TC1" class="method navigator-link" hash-for-method="LoginpageTest(Sunita222, Mishra222)">LoginpageTest(Sunita222, Mishra222)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -159,6 +168,41 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-dsalgo1" class="panel dsalgo1">
+          <div class="suite-dsalgo1-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.dsalgo1.testCases.GetstartedPage_TC1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="GetstartedTest">
+                  </a> <!-- GetstartedTest -->
+                  <span class="method-name">GetstartedTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.dsalgo1.testCases.GetstartedPage_TC1.GetstartedTest(GetstartedPage_TC1.java:35)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-dsalgo1-class-failed -->
+          <div class="suite-dsalgo1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.dsalgo1.testCases.Homepage_TC1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="HomePageTest">
+                  </a> <!-- HomePageTest -->
+                  <span class="method-name">HomePageTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-dsalgo1-class-passed -->
           <div class="suite-dsalgo1-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -182,10 +226,10 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="LoginpageTest(Sunita222, Mishra222)">
-                  </a> <!-- LoginpageTest(Sunita222, Mishra222) -->
+                  <a name="LoginpageTest(Sunita123, Ayushi)">
+                  </a> <!-- LoginpageTest(Sunita123, Ayushi) -->
                   <span class="method-name">LoginpageTest</span>
-                  <span class="parameters">(Sunita222, Mishra222)</span>
+                  <span class="parameters">(Sunita123, Ayushi)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -198,10 +242,10 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="LoginpageTest(Sunita123, Ayushi)">
-                  </a> <!-- LoginpageTest(Sunita123, Ayushi) -->
+                  <a name="LoginpageTest(Sunita222, Mishra222)">
+                  </a> <!-- LoginpageTest(Sunita222, Mishra222) -->
                   <span class="method-name">LoginpageTest</span>
-                  <span class="parameters">(Sunita123, Ayushi)</span>
+                  <span class="parameters">(Sunita222, Mishra222)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -218,14 +262,14 @@
           <div class="suite-dsalgo1-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.dsalgo1.testCases.GetstartedPage_TC1</span>
+              <span class="class-name">com.dsalgo1.testCases.LinkedlistPage_TC1</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="GetstartedTest">
-                  </a> <!-- GetstartedTest -->
-                  <span class="method-name">GetstartedTest</span>
+                  <a name="LinkedlistPageTest">
+                  </a> <!-- LinkedlistPageTest -->
+                  <span class="method-name">LinkedlistPageTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -241,36 +285,6 @@
                   <a name="StackpageTest">
                   </a> <!-- StackpageTest -->
                   <span class="method-name">StackpageTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-dsalgo1-class-passed -->
-          <div class="suite-dsalgo1-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.dsalgo1.testCases.Homepage_TC1</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="HomePageTest">
-                  </a> <!-- HomePageTest -->
-                  <span class="method-name">HomePageTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-dsalgo1-class-passed -->
-          <div class="suite-dsalgo1-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.dsalgo1.testCases.LinkedlistPage_TC1</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="LinkedlistPageTest">
-                  </a> <!-- LinkedlistPageTest -->
-                  <span class="method-name">LinkedlistPageTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -340,44 +354,44 @@ data.addRows(9);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'LinkedlistPageTest')
 data.setCell(0, 2, 'com.dsalgo1.testCases.LinkedlistPage_TC1')
-data.setCell(0, 3, 11086);
+data.setCell(0, 3, 6238);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'StackpageTest')
 data.setCell(1, 2, 'com.dsalgo1.testCases.Stackpage_TC1')
-data.setCell(1, 3, 4563);
+data.setCell(1, 3, 2473);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'GetstartedTest')
 data.setCell(2, 2, 'com.dsalgo1.testCases.GetstartedPage_TC1')
-data.setCell(2, 3, 1636);
+data.setCell(2, 3, 1059);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'LoginpageTest')
 data.setCell(3, 2, 'com.dsalgo1.testCases.Loginpage_TC1')
-data.setCell(3, 3, 1137);
+data.setCell(3, 3, 846);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'RegisterpageTest')
-data.setCell(4, 2, 'com.dsalgo1.testCases.Registerpage_TC1')
-data.setCell(4, 3, 1015);
+data.setCell(4, 1, 'LoginpageTest')
+data.setCell(4, 2, 'com.dsalgo1.testCases.Loginpage_TC1')
+data.setCell(4, 3, 513);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'LoginpageTest')
 data.setCell(5, 2, 'com.dsalgo1.testCases.Loginpage_TC1')
-data.setCell(5, 3, 787);
+data.setCell(5, 3, 488);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'LoginpageTest')
-data.setCell(6, 2, 'com.dsalgo1.testCases.Loginpage_TC1')
-data.setCell(6, 3, 697);
+data.setCell(6, 1, 'RegisterpageTest')
+data.setCell(6, 2, 'com.dsalgo1.testCases.Registerpage_TC1')
+data.setCell(6, 3, 357);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'HomePageTest')
 data.setCell(7, 2, 'com.dsalgo1.testCases.Homepage_TC1')
-data.setCell(7, 3, 424);
+data.setCell(7, 3, 245);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'Loginvalidity')
 data.setCell(8, 2, 'com.dsalgo1.testCases.Loginpage_TC1')
-data.setCell(8, 3, 106);
+data.setCell(8, 3, 46);
 window.suiteTableData['dsalgo1']= { tableData: data, tableDiv: 'times-div-dsalgo1'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 21 seconds</span>
+              <span class="suite-total-time">Total running time: 12 seconds</span>
               <div id="times-div-dsalgo1">
               </div> <!-- times-div-dsalgo1 -->
             </div> <!-- times-div -->
@@ -395,6 +409,15 @@ return data;
             <span class="header-content">10 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.dsalgo1.testCases.Homepage_TC1</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">Startbrowser</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
               <span class="ignored-class-name">com.dsalgo1.testCases.Registerpage_TC1</span>
               <div class="ignored-methods-div">
@@ -414,25 +437,16 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.dsalgo1.testCases.Stackpage_TC1</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">tearDown</span>
-                <br/>
-                <span class="ignored-method-name">Startbrowser</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.dsalgo1.testCases.Homepage_TC1</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">tearDown</span>
-                <br/>
-                <span class="ignored-method-name">Startbrowser</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
               <span class="ignored-class-name">com.dsalgo1.testCases.LinkedlistPage_TC1</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">Startbrowser</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.dsalgo1.testCases.Stackpage_TC1</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">tearDown</span>
                 <br/>
@@ -454,62 +468,64 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">GetstartedTest</span>
-                <span class="method-start">11981 ms</span>
+                <span class="method-start">13882 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.dsalgo1.testCases.Homepage_TC1</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">HomePageTest</span>
-                <span class="method-start">14463 ms</span>
+                <span class="method-start">15305 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.dsalgo1.testCases.Registerpage_TC1</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">RegisterpageTest</span>
-                <span class="method-start">14899 ms</span>
+                <span class="method-start">15555 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.dsalgo1.testCases.Loginpage_TC1</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">LoginpageTest(Sunita123, Ayushi)</span>
-                <span class="method-start">21029 ms</span>
+                <span class="method-start">22333 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">LoginpageTest(Sunita222, Mishra222)</span>
-                <span class="method-start">21827 ms</span>
+                <span class="method-start">22827 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">LoginpageTest(msunita20, Ayushi@24)</span>
-                <span class="method-start">22531 ms</span>
+                <span class="method-start">23346 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Loginvalidity</span>
-                <span class="method-start">23684 ms</span>
+                <span class="method-start">24197 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.dsalgo1.testCases.LinkedlistPage_TC1</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">LinkedlistPageTest</span>
-                <span class="method-start">23798 ms</span>
+                <span class="method-start">24245 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.dsalgo1.testCases.Stackpage_TC1</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">StackpageTest</span>
-                <span class="method-start">34891 ms</span>
+                <span class="method-start">30487 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.dsalgo1.testCases.GetstartedPage_TC1</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">39462 ms</span>
+                <span class="method-start">32965 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
